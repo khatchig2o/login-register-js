@@ -1,0 +1,46 @@
+/* Header start */
+
+.P-menu-list ul li + li {
+    margin-left: 15px;
+}
+
+.P-menu-list ul li a{
+    transition: .3s;
+}
+
+.P-menu-list ul li a{
+    position: relative;
+    padding-bottom: 5px;
+}
+.P-menu-list ul li a:before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: blueviolet;
+    bottom: 0;
+    opacity: 0;
+    transition: .3s;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    right: 0;
+}
+
+.P-menu-list ul li a:hover{
+    color: blueviolet;
+}
+
+.P-menu-list ul li a:hover:before{
+    opacity: 1;
+    width: 100%;
+
+}
+
+
+
+
+/* Header end */
+
+/*body:hover{*/
+/*    background-color: #5cb85c;*/
+/*}*/

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <title>login-page</title>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <div class="buttns">
+            <button class="buttn-log" id="logb">
+                <h2>login</h2>
+            </button>
+            <button class="buttn-log" id="rigb">
+                <h2>Register</h2>
+            </button>
+            <a href="./userinfos.html"><button class="buttn-log" id="userb">
+                <h2>Useres list</h2>
+            </button></a>
+        </div>
+        <div id="P-login-block">
+            <form class="P-login-form">
+                <div class="user-box">
+                    <input type="text" name="userName" required>
+                    <label>E-mail</label>
+                    <p class="P-error-text" data-login="userName"></p>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                    <p class="P-error-text" data-login="password"></p>
+                </div>
+            </form>
+            <button type="button" class="P-login-button">Submit</button>
+        </div>
+
+        <div id="P-riggister-block">
+            <form class="P-riggister-form">
+                <div class="user-box">
+                    <input type="text" name="firstName" class="P-input-text" required>
+                    <label>First name</label>
+                    <p class="P-error-text" data-login="firstName"></p>
+
+                </div>
+                <div class="user-box">
+                    <input type="text" name="lastName" class="P-input-text" required>
+                    <label>last name</label>
+                    <p class="P-error-text" data-login="lastName"></p>
+
+                </div>
+                <div class="user-box">
+                    <input type="text" name="emailAddres" class="P-input-text" required>
+                    <label>E-mail</label>
+                    <p class="P-error-text" data-login="emailAddres"></p>
+
+                </div>
+                <div class="user-box">
+                    <input type="password" name="passwordN1" class="P-input-text" required>
+                    <label>Password</label>
+                    <p class="P-error-text" data-login="passwordN1"></p>
+
+                </div>
+                <div class="user-box">
+                    <input type="password" name="passwordN2" class="P-input-text" required>
+                    <label>Comfirm password</label>
+                    <p class="P-error-text" data-login="passwordN2"></p>
+                </div>
+            </form>
+            <button type="button" class="butt  P-Riggister-button">Rigister </button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

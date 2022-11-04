@@ -1,0 +1,152 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.buttns{
+    margin-top:40px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.buttn-log {
+    margin-bottom: -20px;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+}
+
+.login-box {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.P-login-form {
+    max-width: 340px;
+    width: 100%;
+}
+
+.login-box .user-box {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.login-box .user-box p {
+    margin: 0;
+    color: red;
+}
+
+.login-box .user-box input {
+    width: 300px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.P-Riggister-button ,
+.P-login-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 0;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 4px
+}
+
+.P-Riggister-button:hover,
+.P-login-button:hover{
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+#P-login-block{
+
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transition: 0.5s;
+}
+
+
+#P-riggister-block{
+    position: absolute;
+    left: 500px;
+    transition: 0.5s;
+} 
+
+/* .infodiv{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 15px;
+    color:#fff ;
+}
+.info{
+    margin-top: 3px;
+    position: center;
+} */
